@@ -1,0 +1,89 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #131313;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*  */
+/* Header */
+/*  */
+#header {
+    background-image: url('../images/background/header.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Logo */
+.header-logo-container {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.header-logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Text */
+.header-text-container {
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.header-text-container h1 {
+    font-size: 40px;
+}
+
+.header-text-container p {
+    font-size: 18px;
+}
+
+/* Countdown */
+.countdown-container {
+    padding-top: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.countdown-container li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+
+.countdown-container li span {
+    font-size: 4.5rem;
+}
+
+.countdown-container #seconds {
+    color: red;
+}
+
+/* Contact Button */
+.button {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #3fab4a;
+    padding: 1px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button p {
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
