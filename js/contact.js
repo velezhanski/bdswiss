@@ -80,40 +80,4 @@ $(document).ready(function($) {
   /* ----------------- */
   /* Handle submission */
   /* ----------------- */
-  $('#contactform').submit(function() {
-    var name = $('#name').val();
-    var phone = $('#phone').val();
-    var password = $('#password').val();
-    var human = $('#human:checked').val();
-
-    if (human) {
-      if (validatephone(phone)) {
-        if (name) {
-          if (password) {
-
-// Handle submitting data somewhere
-// For a tutorial on submitting the form to a Google Spreadsheet, see:
-// https://notnaturaltutorials.wordpress.com/2016/03/20/submit-form-to-spreadsheet/
-
-            closeForm();
-
-          } else {
-            $('#notification-text').html("<strong>Please let us know what you're thinking!</strong>");
-            $('.notification').addClass('is-visible');
-          }
-        } else {
-          $('#notification-text').html('<strong>Please provide a name.</strong>');
-          $('.notification').addClass('is-visible');
-        }
-      } else {
-        $('#notification-text').html('<strong>Please use a valid phone number.</strong>');
-        $('.notification').addClass('is-visible');
-      }
-    } else {
-      $('#notification-text').html('<h3><strong><em>Warning: Please prove you are a human and not a robot.</em></strong></h3>');
-      $('.notification').addClass('is-visible');
-    }
-
-    return false;
-  });
 });
