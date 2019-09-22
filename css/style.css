@@ -150,7 +150,7 @@ ul {
 .receive-bonus,
 .trade {
     padding-top: 2rem;
-    background-size: auto 35%;
+    background-size: auto 4vw;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -333,12 +333,19 @@ ul {
 }
 
 @media(max-width: 800px) {
+
     .countdown-box,
     .icons-container,
     .footer-logos,
     .footer-text {
         flex-direction: column;
         align-items: center;
+    }
+
+    .deposit,
+    .receive-bonus,
+    .trade {
+        background-size: auto 6vw;
     }
 
     .risk-warning,
