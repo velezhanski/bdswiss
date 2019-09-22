@@ -5,8 +5,24 @@ html {
 
 body {
     margin: 0;
-    background-color: #131313;
+    background-color: #0e0e0e;
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.green-text {
+    color: #3fab4a;
+}
+
+.white-text {
+    color: #ffffff;
 }
 
 .container {
@@ -24,29 +40,30 @@ body {
 }
 
 /* Logo */
-.header-logo-container {
+#header .logo-container {
     padding-top: 2rem;
     text-align: center;
 }
 
-.header-logo {
+#header .logo {
     width: 200px;
     height: auto;
 }
 
 /* Text */
-.header-text-container {
+.top-text-container {
     padding-top: 2rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
-.header-text-container h1 {
+.top-text-container h1 {
     font-size: 40px;
 }
 
-.header-text-container p {
+.top-text-container p {
     font-size: 18px;
+    color: #a0a0a0;
 }
 
 /* Countdown */
@@ -65,16 +82,28 @@ body {
 }
 
 .countdown-container li span {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
+.countdown-container #seconds2,
 .countdown-container #seconds {
     color: red;
 }
 
+.countdown-container h2 {
+    margin: 0;
+}
+
+/*  */
 /* Contact Button */
-.button {
-    width: 200px;
+/*  */
+.button-container {
+    padding-top: 2rem;
+}
+
+.btn {
+    max-width: 200px;
     margin: 0 auto;
     background-color: #3fab4a;
     padding: 1px 20px;
@@ -82,8 +111,289 @@ body {
     border-radius: 5px;
 }
 
-.button p {
+.btn p {
     color: #ffff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+/* Disclaimer */
+.button-container .text,
+.button2-container .text,
+#desclaimer .text {
+    text-align: center;
+    color: #808080;
+    font-size: 12px;
+}
+
+/*  */
+/* Maximize */
+/*  */
+.maximize-container {
+    padding-top: 2rem;
+    color: #73a578;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*  */
+/* USP */
+/*  */
+#usp h2,
+#usp p {
+    color: white;
+    text-align: center;
+}
+
+.deposit,
+.receive-bonus,
+.trade {
+    padding-top: 2rem;
+    background-size: auto 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.small-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.deposit {
+    background-image: url('../images/USPs/deposit.png');
+}
+
+.receive-bonus {
+    background-image: url('../images/USPs/receive-bonus.png');
+}
+
+.trade {
+    background-image: url('../images/USPs/trade.png');
+}
+
+/*  */
+/* Journey */
+/*  */
+#countdown {
+    background-image: linear-gradient(#0E0E0E, #202327);
+}
+
+.bg-image-wave {
+    background-image: url(../images/background/banner.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1rem;
+    min-height: 350px
+}
+
+.countdown-box {
+    border: 2px solid #494e57;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.countdown-box h1 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.countdown-box p {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.countdown-box .text,
+.countdown-box .countdown-container {
+    flex-basis: 50%;
+}
+
+#days2,
+#hours2,
+#minutes2,
+#seconds2 {
+    font-size: 2rem;
+}
+
+/*  */
+/* Leader Trade */
+/*  */
+#leader-trade {
+    background-color: #202327d6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icons-section {
+    padding-top: 3rem;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    width: 170px;
+}
+
+.button2-container {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+}
+
+/*  */
+/* Desclaimer */
+/*  */
+#desclaimer {
+    background-color: #0e0e0e;
+}
+
+#desclaimer hr {
+    width: 150px;
+    border-color: #d61a1a;
+    border-width: 2px;
+    margin-bottom: 0;
+}
+
+#desclaimer p {
+    margin: 0;
+    padding: 20px;
+}
+
+/*  */
+/* Footer */
+/*  */
+#footer {
+    background-color: #232323;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #808080;
+    font-size: 12px;
+    padding-top: 2rem;
+}
+
+.risk-warning {
+    width: 50%;
+    padding-top: 1rem;
+}
+
+.legal {
+    width: 20%;
+    line-height: 32px;
+}
+
+.link {
+    padding-top: 0.3rem;
+    width: 20%;
+    line-height: 41px;
+}
+
+.link p {
+    padding-top: 0.5rem;
+}
+
+.link img {
+    width: auto;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.logo img {
+    height: 18px;
+}
+
+/*  */
+/* Mobile */
+/*  */
+@media(max-width: 1400px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px) {
+    .countdown-box,
+    .icons-container,
+    .footer-logos,
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .risk-warning,
+    .legal,
+    .link,
+    .footer-logos {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .risk-warning {
+        text-align: justify;
+    }
+
+    .countdown-box {
+        padding: 1rem 0.5rem;
+    }
+
+    .footer-logos img {
+        padding: 10px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .countdown-container li {
+        font-size: 1rem;
+    }
+
+    .countdown-container li span {
+        font-size: 1.5rem !important;
+
+    }
+
+    #header {
+        background-image: url('../images/background/header.png');
+        background-size: cover;
+        min-height: auto;
+    }
 }
