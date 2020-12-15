@@ -19,10 +19,4 @@ let countDown = new Date('Jan 01, 2021 00:00:00').getTime(),
       document.getElementById('minutes2').innerText = Math.floor((distance % (hour)) / (minute)),
       document.getElementById('seconds2').innerText = Math.floor((distance % (minute)) / second);
 
-    //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
-    //}
-
   }, second)
